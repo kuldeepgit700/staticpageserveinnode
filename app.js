@@ -5,8 +5,6 @@ const app = express();
 
 const staticPath = path.join(__dirname, '/public');
 
- console.log(staticPath);
-
 app.use(express.static(staticPath));
 
 app.get('/', (req, res, next)=>{
